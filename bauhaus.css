@@ -1127,3 +1127,22 @@ footer .psypact-fn{font-size:.78rem;opacity:.75;margin-top:4px;}
 
 /* top-bar: active nav underline now gold to match the top-bar rule, not salmon */
 .topnav a:hover,.topnav a.active{border-bottom-color:#E9C46A;}
+
+/* home page: a little breathing room above the eyebrow line */
+.hero-top{padding-top:20px;}
+
+/* services accordion: drop the boxed-card look (border + thick left bar)
+   left over from the old non-accordion version, keep a clean list with
+   a slim color-coded left rule per category */
+details.svc-item{
+  background:transparent;border:none;border-radius:0;
+  border-left:3px solid transparent;
+  border-bottom:1px solid var(--line);
+  margin:0 0 4px;padding:2px 0 12px 14px;
+}
+.svc-col.forensic details.svc-item{border-left-color:var(--blue);}
+.svc-col.clinical details.svc-item{border-left-color:var(--green);}
+details.svc-item summary{font-weight:700;color:var(--navy);font-size:1.02rem;padding:10px 0;}
+details.svc-item summary::before{width:20px;height:20px;font-size:.85rem;border-color:var(--ink-soft);}
+details.svc-item:hover summary::before{border-color:var(--navy);}
+details.svc-item p{margin:0 0 4px 30px;}
