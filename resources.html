@@ -1,97 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Resources | Dr. Sheila Cohen Furr, Ph.D.</title>
-<meta name="description" content="Understand the collaborative divorce process, watch educational videos, read articles, browse recommended books, and get answers to frequently asked questions.">
-<link rel="canonical" href="https://sheila-furr-resources.vercel.app/resources.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Dr. Sheila Cohen Furr, Ph.D.">
-<meta property="og:title" content="Resources | Dr. Sheila Cohen Furr, Ph.D.">
-<meta property="og:description" content="Understand the collaborative divorce process, watch educational videos, read articles, browse recommended books, and get answers to frequently asked questions.">
-<meta property="og:url" content="https://sheila-furr-resources.vercel.app/resources.html">
-<meta property="og:image" content="https://sheila-furr-resources.vercel.app/portrait3.png">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Resources | Dr. Sheila Cohen Furr, Ph.D.">
-<meta name="twitter:description" content="Understand the collaborative divorce process, watch educational videos, read articles, browse recommended books, and get answers to frequently asked questions.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Sans+3:wght@400;600;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="bauhaus.css?v=97">
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is collaborative divorce?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Collaborative divorce is a voluntary, out-of-court process where you and your spouse work with one shared team \u2014 lawyers, neutral experts, and communication support \u2014 instead of opposing sides. You talk directly, set your own pace, and reach a single settlement created by both of you, and the process stays private."
+---
+title: "Resources | Dr. Sheila Cohen Furr, Ph.D."
+description: "Understand the collaborative divorce process, watch educational videos, read articles, browse recommended books, and get answers to frequently asked questions."
+ogType: "website"
+permalink: resources.html
+nav: "resources"
+layout: base.njk
+schema: |
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is collaborative divorce?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Collaborative divorce is a voluntary, out-of-court process where you and your spouse work with one shared team \u2014 lawyers, neutral experts, and communication support \u2014 instead of opposing sides. You talk directly, set your own pace, and reach a single settlement created by both of you, and the process stays private."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is collaborative divorce different from litigation?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In litigation, the case is filed in court and is mandatory if you can't agree. Each side has separate lawyers and experts with no built-in help communicating, costs can escalate quickly, and the outcome becomes part of the public record and is decided by a judge. Collaborative divorce keeps those decisions with you and your spouse instead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What roles does Dr. Furr serve in the collaborative process?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dr. Furr serves as a Family Mediator, Child Specialist, and Neutral Facilitator, and is an Accredited Collaborative Professional. Each role is designed to reduce conflict and keep the focus on the family's well-being and future."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a Child Specialist?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A Child Specialist serves as the voice of the child in the collaborative process while keeping children out of parental conflict, helping ensure their needs and interests are properly represented."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Dr. Furr licensed to practice?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dr. Furr is a licensed psychologist in Florida, Colorado, and California, and holds PSYPACT authority for interjurisdictional telepsychology."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What if we're not sure whether to stay together or separate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dr. Furr offers Divorce Counseling, Mediation, Collaborative Mediation, Collaborative Divorce, and Parenting Plan Consultation as different paths depending on where you and your family are \u2014 from staying together to reconciliation to separation or divorce."
+        }
       }
-    },
-    {
-      "@type": "Question",
-      "name": "How is collaborative divorce different from litigation?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "In litigation, the case is filed in court and is mandatory if you can't agree. Each side has separate lawyers and experts with no built-in help communicating, costs can escalate quickly, and the outcome becomes part of the public record and is decided by a judge. Collaborative divorce keeps those decisions with you and your spouse instead."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What roles does Dr. Furr serve in the collaborative process?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dr. Furr serves as a Family Mediator, Child Specialist, and Neutral Facilitator, and is an Accredited Collaborative Professional. Each role is designed to reduce conflict and keep the focus on the family's well-being and future."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a Child Specialist?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A Child Specialist serves as the voice of the child in the collaborative process while keeping children out of parental conflict, helping ensure their needs and interests are properly represented."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Where is Dr. Furr licensed to practice?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dr. Furr is a licensed psychologist in Florida, Colorado, and California, and holds PSYPACT authority for interjurisdictional telepsychology."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What if we're not sure whether to stay together or separate?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dr. Furr offers Divorce Counseling, Mediation, Collaborative Mediation, Collaborative Divorce, and Parenting Plan Consultation as different paths depending on where you and your family are \u2014 from staying together to reconciliation to separation or divorce."
-      }
-    }
-  ]
-}
-</script>
-</head>
-<body>
-
-<div class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="index.html"><span class="brand-logo" aria-hidden="true"></span><span class="brand-name">Dr. Sheila Cohen Furr<span>Clinical Psychologist</span></span></a>
-    <nav class="topnav">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="peaceful-uncoupling.html">Stay or Separate?</a>
-      <span class="nav-item"><a href="resources.html" class="active">Resources</a><span class="drop"><a href="resources.html#understand">Understanding Collaborative Divorce</a><a href="resources.html#videos">Videos</a><a href="blog.html">The Counselogue (Blog)</a><a href="resources.html#books">Books</a></span></span>
-    </nav>
-    <a class="btn" href="contact.html">Contact</a>
-  </div>
-</div>
-
+    ]
+  }
+---
 <!-- ============ PAGE HERO ============ -->
 <section class="page-hero">
   <div class="inner with-art">
@@ -238,38 +207,6 @@
 </section>
 
 <!-- ============ FOOTER ============ -->
-<footer>
-  <div class="foot-inner">
-    <div>
-      <a class="brand" href="index.html">Sheila Cohen Furr<span>Ph.D., A.B.N.</span></a>
-      <p>Helping families before, during, and after divorce.</p>
-      <p>Licensed in Florida, Colorado &amp; California.</p>
-      <p class="psypact-fn">Dr. Furr has the authority to practice interjurisdictional tele-psychology from the PSYPACT Commission.</p>
-    </div>
-    <div class="foot-col">
-      <h5>Explore</h5>
-      <ul>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="peaceful-uncoupling.html">Stay or Separate?</a></li>
-        <li><a href="resources.html" class="active">Resources</a></li>
-        <li><a href="blog.html">The Counselogue</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div class="foot-col">
-      <h5>Contact</h5>
-      <ul>
-        <li><a href="tel:5614707110">561-470-7110</a></li>
-        <li><a href="mailto:drfurr@sheilafurrphd.com">drfurr@sheilafurrphd.com</a></li>
-        <li>2255 Glades Road, Suite 419A<br>One Boca Place, Boca Raton, FL 33431</li>
-      </ul>
-    </div>
-  </div>
-  <div class="foot-bottom">
-    <span>Copyright 2026 Sheila C. Furr, Ph.D., ABN</span>
-  </div>
-</footer>
 
 <script>
 (function(){
@@ -287,5 +224,3 @@
   show(ids.indexOf(h)>=0?h:'understand');
 })();
 </script>
-</body>
-</html>

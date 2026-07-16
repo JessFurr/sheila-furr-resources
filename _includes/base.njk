@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ title | safe }}</title>
+<meta name="description" content="{{ description | safe }}">
+{% set path = "" if permalink == "index.html" else permalink %}<link rel="canonical" href="{{ site.baseUrl }}/{{ path }}">
+<meta property="og:type" content="{{ ogType }}">
+<meta property="og:site_name" content="Dr. Sheila Cohen Furr, Ph.D.">
+<meta property="og:title" content="{{ title | safe }}">
+<meta property="og:description" content="{{ description | safe }}">
+<meta property="og:url" content="{{ site.baseUrl }}/{{ path }}">
+<meta property="og:image" content="{{ site.ogImage }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title | safe }}">
+<meta name="twitter:description" content="{{ description | safe }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Sans+3:wght@400;600;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bauhaus.css?v=97">
+{% if schema %}<script type="application/ld+json">
+{{ schema | safe }}
+</script>
+{% endif %}</head>
+<body{% if bodyClass %} class="{{ bodyClass }}"{% endif %}>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="brand-logo" aria-hidden="true"></span><span class="brand-name">Dr. Sheila Cohen Furr<span>{{ site.tagline }}</span></span></a>
+    <nav class="topnav">
+      <a href="index.html"{% if nav == 'home' %} class="active"{% endif %}>Home</a>
+      <a href="about.html"{% if nav == 'about' %} class="active"{% endif %}>About</a>
+      <a href="services.html"{% if nav == 'services' %} class="active"{% endif %}>Services</a>
+      <a href="peaceful-uncoupling.html"{% if nav == 'stay' %} class="active"{% endif %}>Stay or Separate?</a>
+      <span class="nav-item"><a href="resources.html"{% if nav == 'resources' %} class="active"{% endif %}>Resources</a><span class="drop"><a href="resources.html#understand">Understanding Collaborative Divorce</a><a href="resources.html#videos">Videos</a><a href="blog.html">The Counselogue (Blog)</a><a href="resources.html#books">Books</a></span></span>
+    </nav>
+    <a class="btn{% if nav == 'contact' %} active{% endif %}" href="contact.html">Contact</a>
+  </div>
+</div>
+
+{{ content | safe }}
+<footer>
+  <div class="foot-inner">
+    <div>
+      <a class="brand" href="index.html">{{ site.name }}<span>{{ site.suffix }}</span></a>
+      <p>Helping families before, during, and after divorce.</p>
+      <p>Licensed in Florida, Colorado &amp; California.</p>
+      <p class="psypact-fn">Dr. Furr has the authority to practice interjurisdictional tele-psychology from the PSYPACT Commission.</p>
+    </div>
+    <div class="foot-col">
+      <h5>Explore</h5>
+      <ul>
+        <li><a href="about.html"{% if nav == 'about' %} class="active"{% endif %}>About</a></li>
+        <li><a href="services.html"{% if nav == 'services' %} class="active"{% endif %}>Services</a></li>
+        <li><a href="peaceful-uncoupling.html"{% if nav == 'stay' %} class="active"{% endif %}>Stay or Separate?</a></li>
+        <li><a href="resources.html"{% if nav == 'resources' %} class="active"{% endif %}>Resources</a></li>
+        <li><a href="blog.html">The Counselogue</a></li>
+        <li><a href="contact.html"{% if nav == 'contact' %} class="active"{% endif %}>Contact</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5>Contact</h5>
+      <ul>
+        <li><a href="{{ site.phoneHref }}">{{ site.phone }}</a></li>
+        <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        <li>{{ site.addressLine1 }}<br>{{ site.addressLine2 }}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <span>Copyright 2026 Sheila C. Furr, Ph.D., ABN</span>
+  </div>
+</footer>
+
+</body>
+</html>
