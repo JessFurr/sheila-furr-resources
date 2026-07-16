@@ -1103,3 +1103,18 @@ footer .psypact-fn{font-size:.78rem;opacity:.75;margin-top:4px;}
 .topbar{border-bottom:1px solid #E9C46A;}
 /* 100) psypact-note text was white-on-mint (unreadable) — navy blue instead */
 .psypact-note{color:#191970;}
+
+/* hover: buttons and decorative/icon shapes grow slightly on mouse-over */
+.btn,.cred,.head-icon,.role-ic,.book .spine,
+.shape-circle,.shape-ring,.bh-circle,.bh-half,.bh-red,.bh-dots,
+.br-sq1,.br-sq2,.hero-art-sq1,.hero-art-sq2,.b-bullet,.res-bullet{
+  transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+}
+.btn:hover{transform:scale(1.06);}
+.cred:hover{transform:scale(1.07);}
+.head-icon:hover,.role-ic:hover{transform:scale(1.12);}
+.book:hover .spine{transform:scale(1.15);}
+.shape-circle:hover,.shape-ring:hover,.bh-circle:hover,.bh-half:hover,
+.bh-red:hover,.bh-dots:hover,.br-sq1:hover,.br-sq2:hover,
+.hero-art-sq1:hover,.hero-art-sq2:hover{transform:scale(1.18);}
+.b-bullet:hover,.res-bullet:hover{transform:scale(1.4);}
