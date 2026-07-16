@@ -531,7 +531,7 @@ section.block>.wrap{position:relative;z-index:1;}
 .topbar{background:#4A7CE8;border-bottom:3px solid #E9C46A;}
 .topbar .brand-name{color:#fff;}
 .topbar .brand-name span{color:#F2CE72;}
-.brand-logo{width:56px;height:46px;background:url("logo white.png") no-repeat center;background-size:contain;}
+.brand-logo{width:56px;height:46px;background:url("sfc-logo-white.svg") no-repeat center;background-size:contain;}
 .topnav a{color:rgba(255,255,255,.82);}
 .topnav a:hover,.topnav a.active{color:#fff;border-bottom-color:#FF9B7B;}
 .topbar .btn{background:#fff;color:#16181C;border-color:#16181C;}
@@ -1118,3 +1118,12 @@ footer .psypact-fn{font-size:.78rem;opacity:.75;margin-top:4px;}
 .bh-red:hover,.bh-dots:hover,.br-sq1:hover,.br-sq2:hover,
 .hero-art-sq1:hover,.hero-art-sq2:hover{transform:scale(1.18);}
 .b-bullet:hover,.res-bullet:hover{transform:scale(1.4);}
+
+/* home page: blue subhead paragraphs bumped one size up */
+.hero-pitch p,.stages .section-head p:not(.kicker){font-size:1.18rem;}
+
+/* home page: green dot-grid accent shifted left, further over the photo */
+.bh-dots{right:40px;}
+
+/* top-bar: active nav underline now gold to match the top-bar rule, not salmon */
+.topnav a:hover,.topnav a.active{border-bottom-color:#E9C46A;}
