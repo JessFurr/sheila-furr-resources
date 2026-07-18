@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Source+Sans+3:wght@400;600;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="bauhaus.css?v=97">
+<link rel="stylesheet" href="bauhaus.css?v=98">
 {% if schema %}<script type="application/ld+json">
 {{ schema | safe }}
 </script>
@@ -37,7 +37,17 @@
       <span class="nav-item"><a href="resources.html"{% if nav == 'resources' %} class="active"{% endif %}>Resources</a><span class="drop"><a href="resources.html#understand">Understanding Collaborative Divorce</a><a href="resources.html#faq">FAQ</a><a href="resources.html#videos">Videos</a><a href="blog.html">The Counselogue (Blog)</a><a href="resources.html#books">Books</a></span></span>
     </nav>
     <a class="btn{% if nav == 'contact' %} active{% endif %}" href="contact.html">Contact</a>
+    <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" type="button"><span></span><span></span><span></span></button>
   </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="index.html"{% if nav == 'home' %} class="active"{% endif %}>Home</a>
+    <a href="about.html"{% if nav == 'about' %} class="active"{% endif %}>About</a>
+    <a href="services.html"{% if nav == 'services' %} class="active"{% endif %}>Services</a>
+    <a href="peaceful-uncoupling.html"{% if nav == 'stay' %} class="active"{% endif %}>Stay or Separate?</a>
+    <a href="resources.html"{% if nav == 'resources' %} class="active"{% endif %}>Resources</a>
+    <a href="blog.html">The Counselogue (Blog)</a>
+    <a href="contact.html"{% if nav == 'contact' %} class="active"{% endif %}>Contact</a>
+  </nav>
 </div>
 
 {{ content | safe }}
@@ -74,5 +84,19 @@
   </div>
 </footer>
 
+<script>
+(function(){
+  var btn=document.querySelector('.nav-toggle'), menu=document.getElementById('mobile-nav');
+  if(!btn||!menu) return;
+  btn.addEventListener('click',function(){
+    var open=menu.classList.toggle('open');
+    btn.classList.toggle('open',open);
+    btn.setAttribute('aria-expanded',open?'true':'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){
+    menu.classList.remove('open'); btn.classList.remove('open'); btn.setAttribute('aria-expanded','false');
+  });});
+})();
+</script>
 </body>
 </html>

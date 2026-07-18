@@ -1150,3 +1150,36 @@ details.svc-item p{margin:0 0 4px 30px;}
 /* top-bar: new circular badge logo (icon + "Dr. Furr" script wordmark) —
    square art, not the old wide wordmark, so give it equal width/height */
 .topbar .brand-logo{width:84px;height:84px;background:url("logo white.png") no-repeat center;background-size:contain;}
+
+/* mobile navigation: hamburger + drop panel — .topnav is display:none below 900px
+   with nothing replacing it, so the whole nav disappeared on phones/tablets */
+.nav-toggle{display:none;flex-direction:column;justify-content:center;gap:5px;width:30px;height:30px;padding:0;border:none;background:none;cursor:pointer;flex:0 0 auto;}
+.nav-toggle span{display:block;width:100%;height:3px;background:#fff;border-radius:2px;transition:transform .2s ease,opacity .2s ease;}
+.nav-toggle.open span:nth-child(1){transform:translateY(8px) rotate(45deg);}
+.nav-toggle.open span:nth-child(2){opacity:0;}
+.nav-toggle.open span:nth-child(3){transform:translateY(-8px) rotate(-45deg);}
+.mobile-nav{display:none;flex-direction:column;background:#4A7CE8;}
+.mobile-nav.open{display:flex;}
+.mobile-nav a{color:#fff;padding:14px 22px;font-family:var(--sans);font-weight:700;text-transform:uppercase;letter-spacing:.04em;font-size:.92rem;border-top:1px solid rgba(255,255,255,.18);}
+.mobile-nav a.active{color:#F2CE72;}
+@media(max-width:900px){.nav-toggle{display:flex;}}
+
+/* small phones: keep the bigger logo/brand text from overflowing the bar */
+@media(max-width:560px){
+  .topbar .brand-logo{width:44px;height:44px;}
+  .topbar .brand-name{font-size:.86rem;}
+  .topbar .brand-name span{font-size:.56rem;}
+  .topbar-inner{gap:10px;padding:11px 16px;}
+  .topbar .btn{display:none;}
+}
+
+/* homepage hero: photo+copy grid never stacked on narrow screens, so it squeezed
+   into two cramped columns and overflowed the viewport */
+@media(max-width:760px){
+  .hero-grid{grid-template-columns:1fr;}
+  .hero-photo{max-width:360px;margin:0 auto;}
+}
+
+/* safety net: several decorative shapes are absolutely positioned with negative
+   offsets that can bleed past the edge on narrow screens; clip instead of scroll */
+html,body{overflow-x:hidden;}
