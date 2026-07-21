@@ -1216,3 +1216,10 @@ html,body{overflow-x:hidden;}
   .services-page .hero-art-frame{flex:0 1 auto;max-width:100%;}
   .services-page .hero-art{width:100%;max-width:340px;height:121px;}
 }
+
+/* page-hero decorative grid (::before) sits right where the kicker/heading
+   text starts — on mobile it lands on top of the words instead of beside
+   them (About, Services, Contact, Resources, Blog list all share .page-hero) */
+@media(max-width:760px){
+  .page-hero::before{display:none;}
+}
