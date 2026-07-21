@@ -1183,3 +1183,36 @@ details.svc-item p{margin:0 0 4px 30px;}
 /* safety net: several decorative shapes are absolutely positioned with negative
    offsets that can bleed past the edge on narrow screens; clip instead of scroll */
 html,body{overflow-x:hidden;}
+
+/* mobile fixes round 2 — real layout bugs found testing on an actual phone */
+
+/* homepage: the head+brain accent circle overlaps the CTA buttons once the hero
+   stacks to one column on mobile — its right/bottom offsets were tuned only for
+   the 2-column desktop layout */
+@media(max-width:760px){
+  .hero .shape-circle{display:none;}
+}
+
+/* stay-or-separate hero: a later, unconditional rule (width:1180px, min-width:
+   460px/540px on the two columns) was clobbering the earlier mobile-stacking
+   rule, forcing the whole hero far wider than any phone viewport */
+@media(max-width:800px){
+  .crossroads-hero .stay-inner.crossroads-side-by-side{width:auto;max-width:100%;}
+  .crossroads-txt{width:auto;max-width:100%;min-width:0;}
+  .crossroads-wrap{width:auto;max-width:100%;min-width:0;height:auto;}
+  .crossroads-img{width:100%;height:auto;}
+}
+
+/* resources: the "Visit The Counselogue" circle button is absolutely positioned
+   at top:0, which lands directly on top of the section heading once the column
+   is mobile-narrow (it only clears the heading on wide desktop layouts) */
+@media(max-width:760px){
+  .articles-blog-btn{position:static;display:flex;margin:0 auto 20px;}
+}
+
+/* services: hero illustration had a hardcoded 420px width with no responsive
+   override, overflowing narrow viewports (its corner squares bled further still) */
+@media(max-width:480px){
+  .services-page .hero-art-frame{flex:0 1 auto;max-width:100%;}
+  .services-page .hero-art{width:100%;max-width:340px;height:121px;}
+}
