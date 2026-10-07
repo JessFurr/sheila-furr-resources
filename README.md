@@ -5,7 +5,7 @@ Accredited Collaborative Professional in Boca Raton, FL, serving families
 before, during, and after divorce through collaborative divorce, mediation,
 child specialist work, and family therapy.
 
-**Live site:** https://sheila-furr-resources.vercel.app
+**Live site:** https://www.sheilafurrphd.com
 
 ## Stack
 
