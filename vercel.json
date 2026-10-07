@@ -1,4 +1,62 @@
 {
   "buildCommand": "npx @11ty/eleventy",
-  "outputDirectory": "_site"
+  "outputDirectory": "_site",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/blog.html",
+      "destination": "/blog/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-parenting-schedules.html",
+      "destination": "/blog/parenting-schedules/",
+      "permanent": true
+    },
+    {
+      "source": "/about.html",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-consultation.html",
+      "destination": "/blog/consultation/",
+      "permanent": true
+    },
+    {
+      "source": "/contact.html",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-life-planning.html",
+      "destination": "/blog/life-planning/",
+      "permanent": true
+    },
+    {
+      "source": "/blog-mission-statement.html",
+      "destination": "/blog/mission-statement/",
+      "permanent": true
+    },
+    {
+      "source": "/peaceful-uncoupling.html",
+      "destination": "/peaceful-uncoupling/",
+      "permanent": true
+    },
+    {
+      "source": "/resources.html",
+      "destination": "/resources/",
+      "permanent": true
+    },
+    {
+      "source": "/services.html",
+      "destination": "/services/",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ]
 }
