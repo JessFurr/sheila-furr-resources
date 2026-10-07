@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sheila-furr-resources.vercel.app/sitemap.xml
+Sitemap: https://www.sheilafurrphd.com/sitemap.xml
