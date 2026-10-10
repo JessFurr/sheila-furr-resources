@@ -1381,3 +1381,8 @@ body .mobile-nav a.active{color:#0F6FD1;}
 body .topbar-inner{max-width:none;justify-content:space-between;padding-left:28px;padding-right:28px;}
 body .topnav{margin-left:auto;}
 @media(max-width:560px){body .topbar-inner{padding-left:16px;padding-right:16px;}}
+
+/* Top bar logo a bit bigger */
+@media(min-width:641px){
+  body .topbar .brand-logo{width:66px;height:66px;}
+}
