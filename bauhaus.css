@@ -1352,6 +1352,3 @@ body .hero-pitch .pitch-card p{margin:0;font-size:1.25rem;line-height:1.3;max-wi
   body .hero-pitch h2{margin-top:0;}
   body .hero-pitch .pitch-card{margin:6px 0 20px;}
 }
-
-/* Home hero name in DM Serif Display (single weight; keep it from faux-bolding) */
-body .hero-name,body .hero-name .phd{font-family:var(--serif);font-weight:400;font-synthesis:none;letter-spacing:0;}
