@@ -1372,3 +1372,17 @@ body .topnav{margin-left:auto;}
 @media(min-width:641px){
   body .topbar .brand-logo{width:66px;height:66px;}
 }
+
+/* ---------- gentle motion (all off for visitors who prefer reduced motion) ---------- */
+@media (prefers-reduced-motion:no-preference){
+  @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+  .hero-top{animation:fadeUp .8s ease backwards;}
+  .hero-grid{animation:fadeUp .9s .15s ease backwards;}
+  .page-hero .inner{animation:fadeUp .8s ease backwards;}
+  .reveal-on .rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease;}
+  .reveal-on .rv.in{opacity:1;transform:none;}
+  .btn{transition:transform .15s ease,background .15s,color .15s,border-color .15s;}
+  .btn:hover{transform:translateY(-2px);}
+  .reveal-on .rv.in.phase-card:hover,.reveal-on .rv.in.faq-card:hover,.reveal-on .rv.in.article-card:hover,.reveal-on .rv.in.video-card:hover{transform:translateY(-4px);transition:transform .2s ease,box-shadow .2s ease;box-shadow:0 10px 24px rgba(25,25,112,.12);}
+  .phase-card,.faq-card,.article-card,.video-card{transition:box-shadow .2s ease;}
+}
