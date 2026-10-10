@@ -1257,3 +1257,6 @@ body .page-hero{padding:32px 0 26px;}
 .faq-grid{gap:16px;}
 .faq-card{padding:22px 26px;}
 body .cta-band{padding:30px 36px;}
+
+/* Josefin Sans has generous built-in leading: tighten subtitle line spacing */
+body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitch p{line-height:1.28;}
