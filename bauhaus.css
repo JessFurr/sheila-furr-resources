@@ -1328,3 +1328,7 @@ body.resources-page .page-hero .hero-art{border:0;border-radius:0;box-shadow:non
 
 /* Stay or Separate header: white background */
 body.stay-page .page-hero{background:#fff;}
+
+/* Services: tan dividers inset to the content width (not full-bleed) */
+body.services-page section.block{border-top:0;}
+body.services-page section.block>.wrap::before{content:"";display:block;height:1px;background:#D4C4A0;margin:-32px 0 32px;}
