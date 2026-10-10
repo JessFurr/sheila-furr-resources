@@ -1312,3 +1312,7 @@ body.services-page .hero-art-sq1,body.services-page .hero-art-sq2{display:none;}
   body.services-page .page-hero .inner.with-art{max-width:1180px;}
   body.services-page .hero-art{width:560px;height:200px;max-width:none;}
 }
+
+/* Services: smaller section kickers (Life Challenges & Transitions, 01, 02, 03) */
+body.services-page section.block .kicker{font-size:.8rem;letter-spacing:.14em;}
+body.services-page section.block .kicker::before{width:28px;}
