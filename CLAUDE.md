@@ -6,7 +6,7 @@ Eleventy static site (Dr. Sheila Cohen Furr). Personal project, public content. 
 
 1. **Commit and push every change to `main` right away**, no asking. Stage only the files touched.
 2. **Keep the JSON-LD in sync with every change.** Whenever page content, facts or URLs change, update that page's `schema` frontmatter in the same commit. This covers:
-   - `index.html`: `@graph` with `ProfessionalService` (name, description, phone, address, service area, URL, image) and `FAQPage` for the 4 FAQs shown on the home page. Those 4 are copies of entries on `resources.html`; if either wording changes, update both pages' HTML and schema.
+   - `index.html`: `@graph` with `ProfessionalService` (name, description, phone, address, service area, URL, image) `hasCredential` (the 5 certifications, which are also shown on the home page and in the About page's Certifications column; keep all three in sync), and `FAQPage` for the 4 FAQs shown on the home page. Those 4 are copies of entries on `resources.html`; if either wording changes, update both pages' HTML and schema.
    - `resources.html`: `FAQPage` (must match the visible FAQ Q&As word for word).
    - each `blog-*.html`: `BlogPosting` (headline, description, URLs).
    Also check the `title` and meta `description` frontmatter for the same page. If a change touches a fact that appears in several places (phone, address, service area, tagline), update all of them.
