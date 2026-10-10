@@ -109,8 +109,8 @@ section.greentint{background:var(--cream-2);}
 .section-head h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,4vw,2.9rem);color:var(--deep);margin:0 0 14px;line-height:1.02;letter-spacing:-.02em;text-transform:uppercase;}
 .section-head p{margin:0;color:var(--ink-soft);font-size:1.08rem;}
 
-/* ---------- subtitles — Zen Kurenaido (global) ---------- */
-.page-hero p:not(.kicker),.section-head p:not(.kicker),.hero-pitch p{font-family:"Zen Kurenaido",var(--sans);font-weight:700;}
+/* ---------- subtitles — Josefin Sans (global) ---------- */
+.page-hero p:not(.kicker),.section-head p:not(.kicker),.hero-pitch p{font-family:"Josefin Sans",var(--sans);font-weight:400;}
 
 /* ---------- home resource list — shape bullets ---------- */
 .res-list li{display:flex;align-items:center;gap:14px;}
@@ -739,7 +739,7 @@ body{line-height:1.5;}
 .topnav a{font-weight:700;}
 .topbar .btn{font-weight:700;}
 /* headings back to the previous font (body stays Source Sans 3) */
-:root{--serif:"DM Serif Display",Georgia,"Times New Roman",serif;}  /* headings; subtitles/body accents stay Zen Kurenaido (line ~113) */
+:root{--serif:"DM Serif Display",Georgia,"Times New Roman",serif;}  /* headings; subtitles use Josefin Sans (line ~113) */
 /* uniform page-heading size = home "Sheila Cohen Furr, Ph.D." */
 .page-hero h1{font-size:clamp(1.9rem,4.4vw,2.9rem);line-height:1.05;}
 /* strict alternation — never the same color back to back */
@@ -1241,6 +1241,3 @@ body section.block .cta-band p{color:#d6e6ea;}
 /* DM Serif Display has one weight: never synthesize bold on headings that ask for 700 */
 h1,h2,h3,h4,.slogan-roles,.stay-flag,.faq-card h3,.phase-card h3{font-synthesis:none;}
 .hero-pitch h2 strong{font-weight:400;}
-
-/* Home hero intro paragraph: Josefin Sans */
-body .hero-pitch p{font-family:"Josefin Sans",var(--sans);font-weight:400;}
