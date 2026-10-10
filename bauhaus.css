@@ -1297,3 +1297,6 @@ body .section-head h2{margin-bottom:16px;}
 
 /* Services header: a bit more height */
 body.services-page .page-hero{padding:56px 0 50px;}
+
+/* section subheadlines (Before Divorce, Support at every stage, FAQ...) a bit smaller */
+body .section-head h2{font-size:clamp(1.5rem,2.8vw,2rem);}
