@@ -1270,3 +1270,10 @@ body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitc
 
 /* breathing room between a section heading and its subtitle */
 body .section-head h2{margin-bottom:16px;}
+
+/* About: credentials stacked, all always visible (replaces tabs) */
+.cred-stack{border:2px solid var(--navy);border-radius:var(--radius);background:var(--cream-2);overflow:hidden;}
+.cred-stack .panel{padding:20px 22px;}
+.cred-stack .panel+.panel{border-top:2px solid var(--navy);}
+.cred-stack h4{font-family:var(--serif);font-weight:400;color:var(--navy);font-size:1.18rem;margin:0 0 10px;}
+.cred-stack .fact-list li:first-child{padding-top:0;}

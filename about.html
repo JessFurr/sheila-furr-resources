@@ -31,20 +31,17 @@ layout: base.njk
       </div>
 
       <div class="bio-side">
-        <div class="cred-tabs">
-          <div class="tabs" role="tablist">
-            <button class="tab active" type="button">Education</button>
-            <button class="tab" type="button">Licensure</button>
-            <button class="tab" type="button">Certifications</button>
-          </div>
+        <div class="cred-stack">
           <div class="panel">
+            <h4>Education</h4>
             <ul class="fact-list">
               <li><strong>Ph.D., Psychology (Clinical)</strong>University of Rhode Island</li>
               <li><strong>Ed.M., School Psychology</strong>Boston University</li>
               <li><strong>B.S., Human Development &amp; Family Studies</strong>Cornell University</li>
             </ul>
           </div>
-          <div class="panel" hidden>
+          <div class="panel">
+            <h4>Licensure</h4>
             <ul class="fact-list">
               <li><strong>California</strong>Licensed Psychologist</li>
               <li><strong>Florida</strong>Licensed Psychologist</li>
@@ -52,7 +49,8 @@ layout: base.njk
               <li><strong>PSYPACT</strong>Interjurisdictional telepsychology (presently 38 states)</li>
             </ul>
           </div>
-          <div class="panel" hidden>
+          <div class="panel">
+            <h4>Certifications</h4>
             <ul class="fact-list">
               <li><strong>Medical Staff of Boca Raton Regional Hospital</strong></li>
               <li><strong>Board Certified by the American Board of Professional Neuropsychology</strong></li>
@@ -77,13 +75,3 @@ layout: base.njk
   </div>
 </section>
 
-<script>
-document.querySelectorAll('.cred-tabs').forEach(function(w){
-  var tabs=w.querySelectorAll('.tab'), panels=w.querySelectorAll('.panel');
-  tabs.forEach(function(t,i){ t.addEventListener('click', function(){
-    tabs.forEach(function(x){x.classList.remove('active');});
-    panels.forEach(function(p){p.hidden=true;});
-    t.classList.add('active'); panels[i].hidden=false;
-  });});
-});
-</script>
