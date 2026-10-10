@@ -1293,3 +1293,4 @@ body .section-head h2{margin-bottom:16px;}
 /* line under the Education / Licensure / Certifications headings */
 .cred-stack h4{border-bottom:2px solid var(--navy);padding-bottom:8px;margin-bottom:12px;}
 .cred-stack .fact-list li:first-child{padding-top:0;}
+.cred-stack h4{border-bottom-width:1px;}
