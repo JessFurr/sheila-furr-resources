@@ -1,22 +1,42 @@
 ---
 title: "Services | Dr. Sheila Cohen Furr, Ph.D."
-description: "Forensic and clinical psychology services before, during, and after divorce — collaborative mediation, child specialist support, co-parenting consultation, and family therapy."
+description: "Forensic and clinical psychology services for life challenges and transitions and for divorce (before, during, and after) — collaborative mediation, child specialist support, co-parenting consultation, and family therapy."
 ogType: "website"
 permalink: /services/
 nav: "services"
 bodyClass: "services-page"
 layout: base.njk
 ---
+<style>
+.svc-switch{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:flex-start;}
+.svc-switch .cred{cursor:pointer;font-family:var(--sans);font-size:.95rem;}
+.svc-switch .cred[aria-pressed="true"],.svc-switch .cred.on{background:var(--blue);border-color:var(--blue);color:#fff;}
+.svc-drop{position:relative;}
+.svc-menu{position:static;margin-top:6px !important;min-width:100%;margin:0;padding:6px;list-style:none;background:#fff;border:2px solid var(--navy);border-radius:var(--radius);}
+.svc-menu[hidden]{display:none;}
+.svc-menu button{display:block;width:100%;text-align:left;background:none;border:0;padding:9px 12px;font:inherit;font-size:.95rem;color:var(--navy);cursor:pointer;white-space:nowrap;}
+.svc-menu button:hover,.svc-menu button.on{background:var(--blue-soft,#E4F0FF);}
+.svc-panel[hidden]{display:none;}
+body .svc-panel section.block{background:#F0F6FE;}
+div.svc-item.static{background:transparent;border:none;border-left:3px solid var(--blue);border-bottom:1px solid var(--line);border-radius:0;margin:0 0 4px;padding:12px 0 12px 14px;font-weight:700;color:var(--navy);font-size:1.02rem;}
+.svc-col.clinical div.svc-item.static{border-left-color:var(--green);}
+</style>
 <section class="page-hero">
   <div class="inner with-art">
     <div>
-    <p class="kicker">Support Before, During &amp; After Divorce</p>
+    <p class="kicker">Support Through Life Challenges, Transitions &amp; Divorce</p>
     <h1>Services</h1>
     <p>Forensic and clinical services at every stage of the journey</p>
-    <div class="creds center" style="margin-top:22px;">
-      <a class="cred" href="#before" style="text-decoration:none;">Before Divorce</a>
-      <a class="cred" href="#during" style="text-decoration:none;">During Divorce</a>
-      <a class="cred" href="#after" style="text-decoration:none;">After Divorce</a>
+    <div class="svc-switch" id="svc-switch">
+      <button type="button" class="cred" data-show="challenges" aria-pressed="true">Life Challenges &amp; Transitions</button>
+      <div class="svc-drop">
+        <button type="button" class="cred" id="divorce-btn" aria-haspopup="true" aria-expanded="false" aria-pressed="false">Divorce &#9662;</button>
+        <ul class="svc-menu" id="divorce-menu" hidden>
+          <li><button type="button" data-show="before">Before Divorce</button></li>
+          <li><button type="button" data-show="during">During Divorce</button></li>
+          <li><button type="button" data-show="after">After Divorce</button></li>
+        </ul>
+      </div>
     </div>
     </div>
     <div class="hero-art-frame">
@@ -27,7 +47,39 @@ layout: base.njk
   </div>
 </section>
 
-<!-- ============ BEFORE ============ -->
+<div class="svc-panel" data-panel="challenges">
+<section class="block cream" id="challenges">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="kicker">Life Challenges &amp; Transitions</p>
+      <h2>Life Challenges and Transitions</h2>
+      <p>Support for individuals, couples, and families through the changes that stress the family system.</p>
+    </div>
+    <div class="svc-cols">
+      <div class="svc-col forensic">
+        <h3><span class="dot"></span>Family &amp; Relationships</h3>
+        <p class="lead">Growing, blending &amp; caring</p>
+        <div class="svc-item static">Marriage adjustment and integrating into a new family</div>
+        <div class="svc-item static">Transition to parenthood and child rearing</div>
+        <div class="svc-item static">Career decisions</div>
+        <div class="svc-item static">Interpersonal struggles within the family</div>
+        <div class="svc-item static">Blended families and stepparenting</div>
+        <div class="svc-item static">Caring for aging parents (the &ldquo;sandwich generation&rdquo;)</div>
+      </div>
+      <div class="svc-col clinical">
+        <h3><span class="dot"></span>Loss &amp; Change</h3>
+        <p class="lead">Grief, endings &amp; new chapters</p>
+        <div class="svc-item static">Grief, bereavement, and loss of a loved one</div>
+        <div class="svc-item static">Divorce, separation, and co-parenting</div>
+        <div class="svc-item static">Relocation, immigration, or adjusting to a new culture</div>
+        <div class="svc-item static">Job loss, career change, or burnout</div>
+        <div class="svc-item static">Retirement and loss of professional identity</div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+<div class="svc-panel" data-panel="before" hidden>
 <section class="block cream" id="before">
   <div class="wrap">
     <div class="section-head">
@@ -58,8 +110,8 @@ layout: base.njk
     </div>
   </div>
 </section>
-
-<!-- ============ DURING ============ -->
+</div>
+<div class="svc-panel" data-panel="during" hidden>
 <section class="block white" id="during">
   <div class="wrap">
     <div class="section-head">
@@ -93,8 +145,8 @@ layout: base.njk
     </div>
   </div>
 </section>
-
-<!-- ============ AFTER ============ -->
+</div>
+<div class="svc-panel" data-panel="after" hidden>
 <section class="block cream" id="after">
   <div class="wrap">
     <div class="section-head">
@@ -124,6 +176,7 @@ layout: base.njk
     </div>
   </div>
 </section>
+</div>
 
 <section class="block white">
   <div class="wrap">
@@ -134,3 +187,24 @@ layout: base.njk
     </div>
   </div>
 </section>
+
+<script>
+(function(){
+  var panels=document.querySelectorAll('.svc-panel'), sw=document.getElementById('svc-switch'),
+      dbtn=document.getElementById('divorce-btn'), menu=document.getElementById('divorce-menu'),
+      lbtn=sw.querySelector('[data-show="challenges"]');
+  function show(id){
+    panels.forEach(function(p){p.hidden=(p.dataset.panel!==id);});
+    var isDivorce=id!=='challenges';
+    lbtn.setAttribute('aria-pressed',!isDivorce); dbtn.setAttribute('aria-pressed',isDivorce);
+    menu.querySelectorAll('button').forEach(function(b){b.classList.toggle('on',b.dataset.show===id);});
+    menu.hidden=true; dbtn.setAttribute('aria-expanded','false');
+    if(location.hash!=='#'+id) history.replaceState(null,'','#'+id);
+  }
+  lbtn.addEventListener('click',function(){show('challenges');});
+  dbtn.addEventListener('click',function(e){e.stopPropagation();var o=menu.hidden;menu.hidden=!o;dbtn.setAttribute('aria-expanded',o);});
+  menu.addEventListener('click',function(e){var b=e.target.closest('button[data-show]');if(b)show(b.dataset.show);});
+  document.addEventListener('click',function(){menu.hidden=true;dbtn.setAttribute('aria-expanded','false');});
+  var h=location.hash.slice(1); if(h&&document.querySelector('.svc-panel[data-panel="'+h+'"]')) show(h);
+})();
+</script>
