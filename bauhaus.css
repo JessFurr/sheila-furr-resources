@@ -1335,3 +1335,20 @@ body.services-page section.block>.wrap::before{content:"";display:block;height:1
 
 /* Resources: FAQ section in solid soft yellow */
 body.resources-page section#faq.block{background:#FBF5D8;}
+
+/* Home hero: round photo, quote in a white card overlapping it, no decorative shapes */
+body .hero{background:#fff;}
+body .hero::before,body .hero::after{display:none;}
+body .hero-grid{grid-template-columns:340px 1fr;gap:40px;align-items:start;}
+body .hero-photo::before,body .hero-photo::after{display:none;}
+body .hero-photo img{border:0;border-radius:50%;aspect-ratio:1;object-fit:cover;width:100%;max-width:340px;height:auto;}
+body .hero-pitch{position:relative;z-index:3;}
+body .hero-pitch h2{margin-top:30px;}
+body .hero-pitch .pitch-card{background:#fff;padding:24px 30px;margin:6px 0 22px -90px;box-shadow:0 14px 36px rgba(25,25,112,.16);border-radius:var(--radius);}
+body .hero-pitch .pitch-card p{margin:0;font-size:1.25rem;line-height:1.3;max-width:none;}
+@media(max-width:960px){
+  body .hero-grid{grid-template-columns:1fr;gap:24px;}
+  body .hero-photo{max-width:300px;margin:0 auto;}
+  body .hero-pitch h2{margin-top:0;}
+  body .hero-pitch .pitch-card{margin:6px 0 20px;}
+}
