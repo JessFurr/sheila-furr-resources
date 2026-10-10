@@ -1260,3 +1260,7 @@ body .cta-band{padding:30px 36px;}
 
 /* Josefin Sans has generous built-in leading: tighten subtitle line spacing */
 body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitch p{line-height:1.28;}
+
+/* tighter still: subtitles 1.15, body copy 1.4 */
+body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitch p{line-height:1.15;}
+body,.post p,.bio-body p,.approach p,.svc-item p{line-height:1.4;}
