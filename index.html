@@ -8,31 +8,72 @@ layout: base.njk
 schema: |
   {
     "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Dr. Sheila Cohen Furr, Ph.D.",
-    "image": "https://www.sheilafurrphd.com/portrait3.webp",
-    "url": "https://www.sheilafurrphd.com/",
-    "telephone": "+1-561-470-7110",
-    "description": "Board Certified Psychologist and Accredited Collaborative Professional helping couples/families before, during, and after life challenges and transitions, including collaborative divorce, mediation, child specialist, and family therapy services.",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "2255 Glades Road, Suite 419A, One Boca Place",
-      "addressLocality": "Boca Raton",
-      "addressRegion": "FL",
-      "postalCode": "33431",
-      "addressCountry": "US"
-    },
-    "areaServed": [
-      "Florida",
-      "Colorado",
-      "California"
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Sheila Cohen Furr",
-      "honorificSuffix": "Ph.D.",
-      "jobTitle": "Board Certified Psychologist"
-    }
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "name": "Dr. Sheila Cohen Furr, Ph.D.",
+        "image": "https://www.sheilafurrphd.com/portrait3.webp",
+        "url": "https://www.sheilafurrphd.com/",
+        "telephone": "+1-561-470-7110",
+        "description": "Board Certified Psychologist and Accredited Collaborative Professional helping couples/families before, during, and after life challenges and transitions, including collaborative divorce, mediation, child specialist, and family therapy services.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2255 Glades Road, Suite 419A, One Boca Place",
+          "addressLocality": "Boca Raton",
+          "addressRegion": "FL",
+          "postalCode": "33431",
+          "addressCountry": "US"
+        },
+        "areaServed": [
+          "Florida",
+          "Colorado",
+          "California"
+        ],
+        "founder": {
+          "@type": "Person",
+          "name": "Sheila Cohen Furr",
+          "honorificSuffix": "Ph.D.",
+          "jobTitle": "Board Certified Psychologist"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is collaborative divorce?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Collaborative divorce is a voluntary, out-of-court process where you and your spouse work with one shared team — lawyers, neutral experts, and communication support — instead of opposing sides. You talk directly, set your own pace, and reach a single settlement created by both of you, and the process stays private."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is collaborative divorce different from litigation?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In litigation, the case is filed in court and is mandatory if you can't agree. Each side has separate lawyers and experts with no built-in help communicating, costs can escalate quickly, and the outcome becomes part of the public record and is decided by a judge. Collaborative divorce keeps those decisions with you and your spouse instead."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where is Dr. Furr licensed to practice?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dr. Furr is a licensed psychologist in Florida, Colorado, and California, and holds PSYPACT authority for interjurisdictional telepsychology."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if we're not sure whether to stay together or separate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Dr. Furr offers Divorce Counseling, Mediation, Collaborative Mediation, Collaborative Divorce, and Parenting Plan Consultation as different paths depending on where you and your family are — from staying together to reconciliation to separation or divorce."
+            }
+          }
+        ]
+      }
+    ]
   }
 ---
 <!-- ============ HERO ============ -->
@@ -119,6 +160,24 @@ schema: |
           <li style="padding:10px 0;color:var(--navy);font-weight:500;"><span class="res-bullet circ" aria-hidden="true"></span><a href="/resources/#books">Recommended Reading By Audience</a></li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="block white" id="faq">
+  <div class="wrap" style="max-width:820px;">
+    <div class="section-head">
+      <p class="kicker">FAQ</p>
+      <h2>Frequently Asked Questions</h2>
+      <p>Common questions about collaborative divorce and how Dr. Furr can help.</p>
+    </div>
+    <details class="svc-item"><summary>What is collaborative divorce?</summary><p>Collaborative divorce is a voluntary, out-of-court process where you and your spouse work with one shared team &mdash; lawyers, neutral experts, and communication support &mdash; instead of opposing sides. You talk directly, set your own pace, and reach a single settlement created by both of you, and the process stays private.</p></details>
+    <details class="svc-item"><summary>How is collaborative divorce different from litigation?</summary><p>In litigation, the case is filed in court and is mandatory if you can&rsquo;t agree. Each side has separate lawyers and experts with no built-in help communicating, costs can escalate quickly, and the outcome becomes part of the public record and is decided by a judge. Collaborative divorce keeps those decisions with you and your spouse instead.</p></details>
+    <details class="svc-item"><summary>Where is Dr. Furr licensed to practice?</summary><p>Dr. Furr is a licensed psychologist in Florida, Colorado, and California, and holds PSYPACT authority for interjurisdictional telepsychology.</p></details>
+    <details class="svc-item"><summary>What if we&rsquo;re not sure whether to stay together or separate?</summary><p>Dr. Furr offers Divorce Counseling, Mediation, Collaborative Mediation, Collaborative Divorce, and Parenting Plan Consultation as different paths depending on where you and your family are &mdash; from staying together to reconciliation to separation or divorce.</p></details>
+    <div style="text-align:center;margin-top:28px;">
+      <a class="btn solid" href="/resources/#faq">See all FAQs</a>
     </div>
   </div>
 </section>
