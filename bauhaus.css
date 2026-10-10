@@ -1289,3 +1289,7 @@ body .section-head h2{margin-bottom:16px;}
 
 /* Home: certifications box (same look as the About page column), centered under the intro */
 .cred-stack.cred-home{display:block;max-width:560px;margin:0 auto 22px;}
+
+/* line under the Education / Licensure / Certifications headings */
+.cred-stack h4{border-bottom:2px solid var(--navy);padding-bottom:8px;margin-bottom:12px;}
+.cred-stack .fact-list li:first-child{padding-top:0;}
