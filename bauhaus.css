@@ -1294,3 +1294,6 @@ body .section-head h2{margin-bottom:16px;}
 .cred-stack h4{border-bottom:2px solid var(--navy);padding-bottom:8px;margin-bottom:12px;}
 .cred-stack .fact-list li:first-child{padding-top:0;}
 .cred-stack h4{border-bottom-width:1px;}
+
+/* About: the page title "About" is the big headline */
+body .about-hero h1{font-size:clamp(3.6rem,9vw,6.4rem);line-height:.95;margin-bottom:14px;}
