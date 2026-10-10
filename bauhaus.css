@@ -1264,3 +1264,6 @@ body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitc
 /* tighter still: subtitles 1.15, body copy 1.4 */
 body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitch p{line-height:1.15;}
 body,.post p,.bio-body p,.approach p,.svc-item p{line-height:1.4;}
+
+/* subtitles: single (1.0) line spacing */
+body .page-hero p:not(.kicker),body .section-head p:not(.kicker),body .hero-pitch p{line-height:1;}
