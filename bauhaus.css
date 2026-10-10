@@ -1294,3 +1294,6 @@ body .section-head h2{margin-bottom:16px;}
 .cred-stack h4{border-bottom:2px solid var(--navy);padding-bottom:8px;margin-bottom:12px;}
 .cred-stack .fact-list li:first-child{padding-top:0;}
 .cred-stack h4{border-bottom-width:1px;}
+
+/* Services header: a bit more height */
+body.services-page .page-hero{padding:56px 0 50px;}
