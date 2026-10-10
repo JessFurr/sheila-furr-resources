@@ -1223,3 +1223,17 @@ html,body{overflow-x:hidden;}
 @media(max-width:760px){
   .page-hero::before{display:none;}
 }
+
+/* Home page FAQ: answers always visible, 2x2 cards */
+.faq-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+.faq-card{background:var(--cream-2);border:2px solid var(--navy);border-top-width:9px;border-top-color:var(--blue);border-radius:var(--radius);padding:28px 30px;}
+.faq-card.during{border-top-color:var(--red);}
+.faq-card.after{border-top-color:var(--deep);}
+.faq-card h3{font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--navy);margin:0 0 10px;line-height:1.25;}
+.faq-card p{margin:0;color:var(--ink-soft);font-size:.98rem;}
+@media(max-width:760px){
+  .faq-grid{grid-template-columns:1fr;}
+}
+
+/* Keep CTA banner text light regardless of its section's position (even-section rule above would darken it) */
+body section.block .cta-band p{color:#d6e6ea;}
