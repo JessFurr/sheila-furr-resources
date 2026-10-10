@@ -1287,8 +1287,5 @@ body .section-head h2{margin-bottom:16px;}
   .cred-stack .panel+.panel{border-left:0;border-top:2px solid var(--navy);}
 }
 
-/* Home: certifications strip under the "Support at every stage" intro */
-.cert-strip{margin:0 0 22px;text-align:center;}
-.cert-label{font-family:var(--sans);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 8px;}
-.cert-strip ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:8px 12px;}
-.cert-strip li{background:#fff;border:2px solid var(--navy);border-radius:var(--radius);padding:7px 14px;font-size:.92rem;color:var(--navy);line-height:1.3;}
+/* Home: certifications box (same look as the About page column), centered under the intro */
+.cred-stack.cred-home{display:block;max-width:560px;margin:0 auto 22px;}
