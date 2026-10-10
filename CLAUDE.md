@@ -14,3 +14,4 @@ Eleventy static site (Dr. Sheila Cohen Furr). Personal project, public content. 
 4. URLs are folder-style (`/about/`, `/blog/parenting-schedules/`). Use root-relative asset paths. Update `sitemap.xml` when pages are added or renamed, and add a 301 in `vercel.json` for any renamed URL.
 5. Building inside the Drive folder hangs. To verify, rsync to the scratchpad (excluding `node_modules`, `_site`, `.git`), `npm install`, then `npx @11ty/eleventy`.
 6. **Section order matters in `bauhaus.css`.** Backgrounds and text colors alternate via `section:nth-of-type(even)` rules, so inserting or removing a section on a page flips the parity of everything after it. After adding a section, check the sections below it (e.g. the dark CTA banner text) still look right.
+7. **Fonts:** headings use DM Serif Display (`--serif`, single weight, so no bold). Subtitles and lead paragraphs stay Zen Kurenaido; body is Source Sans 3; the name and some labels use Archivo Black.
