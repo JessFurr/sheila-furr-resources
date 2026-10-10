@@ -1319,3 +1319,12 @@ body.services-page section.block .kicker::before{width:28px;}
 
 /* Services: pale mint-green background behind the "Not sure where to start?" banner */
 body.services-page section.block.cta-green{background:#E3F7EE;}
+
+/* About + Resources headers: white background, no outline around the illustration */
+body.resources-page .page-hero,.about-hero{background:#fff;}
+.about-photo img{border:0;}
+.about-photo .br-sq1,.about-photo .br-sq2{display:none;}
+body.resources-page .page-hero .hero-art{border:0;border-radius:0;box-shadow:none;}
+
+/* Stay or Separate header: white background */
+body.stay-page .page-hero{background:#fff;}
